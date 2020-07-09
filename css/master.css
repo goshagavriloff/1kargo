@@ -1,21 +1,64 @@
 /*add header-section*/
 /*https://mdbootstrap.com/docs/jquery/css/background-image/*/
 .view{
-  background-image: url('./../img/slide-1.png');
+  background-image: url('./../img/slide-2.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
 }
 .top-nav-collapse {
-  background-color: #424f95 !important;
+  background-color:#7774a8;
 }
 
 .navbar:not(.top-nav-collapse) {
-  background: transparent !important;
+
+   background: linear-gradient(to bottom right, #4d3d82, #948fa3);
+
 }
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background: #424f95 !important;
+    background: transparent !important;
   }
+}
+/*update header-section:add logo,update menu;add top-info-section*/
+.logo{
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  width: 35px;
+  max-height: 35px;
+  border-radius: 50%;
+
+
+}
+header{
+  position: relative;
+}
+.info{
+  width: 5%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: auto; bottom: 0; right: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.info>div{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  font-size: 2em;
+  max-width: 2em;
+  border-radius: 50%;
+
+
+}
+.info>div:before{
+
+  font-family: 'icomoon' !important;
+  content: var(--slide-icon);
 }
