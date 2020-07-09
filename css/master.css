@@ -1,0 +1,21 @@
+/*add header-section*/
+/*https://mdbootstrap.com/docs/jquery/css/background-image/*/
+.view{
+  background-image: url('./../img/slide-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.top-nav-collapse {
+  background-color: #424f95 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #424f95 !important;
+  }
+}
