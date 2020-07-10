@@ -160,7 +160,93 @@
     </header>
 
 
+<section id='calc'>
+  <div class="container">
+    <h1 class="h2-responsive mt-sm-5 text-center">Калькулятор доставки</h1>
+    <form class="border border-danger position-relative" action="index.html" method="post" >
+      <div class="d-flex justify-content-center costum-circle h1" style="--slide-icon: '\f1ec';">
+      </div>
 
+      <div class="form-group row">
+        <div class="col-12 col-sm-12  col-lg-3 col-xl-3 col-md-3 font-weight-bold">
+          <label for="formInputWhere">Выдача:</label>
+          <select class="" searchable="Search here.."id="formInputWhere">
+            <option value="0" selected>В Забайкальске</option>
+            <option value="1">В USA's city</option>
+            <option value="2">В Germany's city</option>
+            <option value="3">В France's city</option>
+            <option value="3">В Poland's city</option>
+            <option value="3">В Japan's city</option>
+          </select>
+        </div>
+        <div class="col-12 col-sm-12  col-lg-3 col-xl-3 col-md-3 font-weight-bold">
+          <label for="formInputType">Вид товара:</label>
+          <select class="" searchable="Search here.." id="formInputType">
+            <option value="" disabled selected>Тип товара</option>
+            <option value="1">Электроника</option>
+            <option value="2">Продукты</option>
+            <option value="3">Одежда</option>
+            <option value="3">Мебель</option>
+            <option value="3">Оружие</option>
+          </select>
+        </div>
+        <div class="col-12 col-sm-12  col-lg-3 col-xl-3 col-md-3 font-weight-bold">
+          <label for="formInputCity">Город отправки:</label>
+          <select class="" searchable="Search here.."id="formInputCity">
+            <option value="" disabled selected>Choose your country</option>
+            <option value="1">USA</option>
+            <option value="2">Germany</option>
+            <option value="3">France</option>
+            <option value="3">Poland</option>
+            <option value="3">Japan</option>
+          </select>
+        </div>
+        <div class="col-12 col-sm-12  col-lg-3 col-xl-3 col-md-3 font-weight-bold">
+          <label for="formInputVar">Вариант отправки:</label>
+          <input type="text" class="form-control" id="formInputVar" placeholder="Авиа 7-10 дней">
+        </div>
+
+      </div>
+      <div class="form-group text-center">
+
+        <label for="formInputData"><strong>Ввод данных:</strong></label>
+        <div class="d-flex row justify-content-center">
+          <div class="col-12 col-sm-12  col-lg-8 col-xl-8 col-md-8  row">
+            <div class="col-3">
+              <label for="formInputDataGabs">Габариты груза (см):</label>
+            </div>
+
+            <div class="col-3 pr-3 d-flex for-x position-relative costum-center">
+              <input class="form-control " type="number" name="" value="">
+            </div>
+            <div class="col-3 pr-3 d-flex for-x position-relative costum-center" >
+              <input class="form-control " type="number" name="" value="">
+            </div>
+            <div class="col-3 pr-3 costum-center">
+                <input class="form-control" type="number" name="" value="">
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-12  col-lg-4 col-xl-4 col-md-4  d-flex row">
+            <div class="col-3 costum-center">
+              <label for="formInputDataGabs">Вес:</label>
+            </div>
+            <div class="costum-center col-9">
+              <input class="form-control " type="number" name="" value="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="position-relative d-flex justify-content-center">
+        <button type="submit" class="btn btn-danger costum-button ">Рассчитать</button>
+
+      </div>
+    </form>
+
+  </div>
+</section>
 
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
